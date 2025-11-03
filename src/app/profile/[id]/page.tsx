@@ -5,6 +5,7 @@ import React from "react";
 const page = async ({ params }: { params: Promise<{ id: number }> }) => {
   "use cache";
   const id = (await params).id;
+  console.log("This is the test");
   const userData = getUserData(id);
   if (userData === undefined) {
     return <h1>User not found</h1>;
