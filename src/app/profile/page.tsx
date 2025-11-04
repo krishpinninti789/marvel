@@ -1,9 +1,9 @@
+"use cache";
 import React from "react";
 import { getAllUsersData } from "../util";
 import ProfileCard from "../components/ProfileCard";
 
 const page = async () => {
-  "use cache";
   const Users = getAllUsersData();
   return (
     <div>
