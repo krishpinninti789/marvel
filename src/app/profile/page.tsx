@@ -8,7 +8,7 @@ const page = async () => {
   return (
     <div>
       <h1>All users page</h1>
-      <div className="grid grid-cols-3 m-3 p-3 gap-10">
+      <div className="grid grid-cols-3 m-3 p-3 gap-4">
         {Users.map((user) => {
           return (
             <div key={user.id} className="m-3 p-3">
